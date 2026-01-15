@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>關於我</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* 手機 */
+@media screen and (max-width: 400px) {
+    .container {
+        margin: 10px;
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">首頁</a>
+    <a href="works.html">作品</a>
+    <a href="about.html">關於我</a>
+</nav>
+
+<div class="container">
+    <h1>關於我</h1>
+    <p>
+        我是一位對設計與程式有興趣的學生，  
+        喜歡學習新技術並製作自己的作品。
+    </p>
+
+    <h3>技能</h3>
+    <ul>
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>基礎設計</li>
+    </ul>
+
+    <h3>聯絡方式</h3>
+    <p>Email：example@gmail.com</p>
+</div>
+
+</body>
+</html>

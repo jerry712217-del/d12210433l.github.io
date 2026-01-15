@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的作品｜作品集</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(50% - 10px);
+}
+
+.work img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #ddd;
+}
+
+/* 平板 */
+@media screen and (max-width: 800px) {
+    .work {
+        width: 100%;
+    }
+}
+
+/* 手機 */
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">首頁</a>
+    <a href="works.html">作品</a>
+    <a href="about.html">關於我</a>
+</nav>
+
+<div class="container">
+    <h1>我的作品</h1>
+
+    <div class="works">
+        <div class="work">
+            <img src="https://via.placeholder.com/400">
+            <h3>作品一</h3>
+            <p>這是作品一的說明。</p>
+        </div>
+
+        <div class="work">
+            <img src="https://via.placeholder.com/400">
+            <h3>作品二</h3>
+            <p>這是作品二的說明。</p>
+        </div>
+
+        <div class="work">
+            <img src="https://via.placeholder.com/400">
+            <h3>作品三</h3>
+            <p>這是作品三的說明。</p>
+        </div>
+
+        <div class="work">
+            <img src="https://via.placeholder.com/400">
+            <h3>作品四</h3>
+            <p>這是作品四的說明。</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

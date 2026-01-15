@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的作品集｜首頁</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+}
+
+/* 導覽列 */
+nav {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 主要內容 */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.container img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.text {
+    flex: 1;
+}
+
+/* 平板 */
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* 手機 */
+@media screen and (max-width: 400px) {
+    .container img {
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">首頁</a>
+    <a href="works.html">作品</a>
+    <a href="about.html">關於我</a>
+</nav>
+
+<div class="container">
+    <img src="https://via.placeholder.com/400x300">
+    <div class="text">
+        <h1>我的作品集</h1>
+        <p>
+            歡迎來到我的個人作品集網站。  
+            這裡展示了我在設計／程式／創作方面的作品。
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
